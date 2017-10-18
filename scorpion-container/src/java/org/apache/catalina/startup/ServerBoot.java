@@ -44,9 +44,9 @@ import org.apache.juli.logging.LogFactory;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
-public final class Bootstrap {
+public final class ServerBoot {
 
-    private static final Log log = LogFactory.getLog(Bootstrap.class);
+    private static final Log log = LogFactory.getLog(ServerBoot.class);
 
 
     // ------------------------------------------------------- Static Variables
@@ -55,7 +55,7 @@ public final class Bootstrap {
     /**
      * Daemon object used by main.
      */
-    private static Bootstrap daemon = null;
+    private static ServerBoot daemon = null;
 
 
     // -------------------------------------------------------------- Variables
@@ -393,7 +393,7 @@ public final class Bootstrap {
 
         if (daemon == null) {
             // Don't set daemon until init() has completed
-            Bootstrap bootstrap = new Bootstrap();
+        	ServerBoot bootstrap = new ServerBoot();
             try {
                 bootstrap.init();
             } catch (Throwable t) {

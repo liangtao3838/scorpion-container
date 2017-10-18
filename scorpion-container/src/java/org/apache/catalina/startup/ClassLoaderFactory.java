@@ -249,9 +249,9 @@ public final class ClassLoaderFactory {
                         "], isDirectory: [" + file.isDirectory() +
                         "], canRead: [" + file.canRead() + "]";
 
-                File home = new File (Bootstrap.getCatalinaHome());
+                File home = new File (ServerBoot.getCatalinaHome());
                 home = home.getCanonicalFile();
-                File base = new File (Bootstrap.getCatalinaBase());
+                File base = new File (ServerBoot.getCatalinaBase());
                 base = base.getCanonicalFile();
                 File defaultValue = new File(base, "lib");
 
