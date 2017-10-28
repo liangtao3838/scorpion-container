@@ -68,7 +68,7 @@ import org.xml.sax.SAXParseException;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
-public class Catalina {
+public class Radish {
 
 
     /**
@@ -95,7 +95,7 @@ public class Catalina {
      * The shared extensions class loader for this server.
      */
     protected ClassLoader parentClassLoader =
-        Catalina.class.getClassLoader();
+    		Radish.class.getClassLoader();
 
 
     /**
@@ -142,7 +142,7 @@ public class Catalina {
 
     // ----------------------------------------------------------- Constructors
 
-    public Catalina() {
+    public Radish() {
         setSecurityProtection();
         ExceptionUtils.preload();
     }
@@ -633,7 +633,7 @@ public class Catalina {
             }
         }
 
-        getServer().setCatalina(this);
+        getServer().setRadish(this);
 
         // Stream redirection
         initStreams();
@@ -910,7 +910,7 @@ public class Catalina {
         public void run() {
             try {
                 if (getServer() != null) {
-                    Catalina.this.stop();
+                	Radish.this.stop();
                 }
             } catch (Throwable ex) {
                 ExceptionUtils.handleThrowable(ex);
@@ -928,7 +928,7 @@ public class Catalina {
 
 
     private static final com.scorpion.huakerongtong.juli.logging.Log log=
-        com.scorpion.huakerongtong.juli.logging.LogFactory.getLog( Catalina.class );
+        com.scorpion.huakerongtong.juli.logging.LogFactory.getLog( Radish.class );
 
 }
 

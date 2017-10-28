@@ -18,7 +18,7 @@ package com.scorpion.huakerongtong.turnip.security;
 
 import java.security.Security;
 
-import com.scorpion.huakerongtong.turnip.startup.CatalinaProperties;
+import com.scorpion.huakerongtong.turnip.startup.RadishProperties;
 
 /**
  * Util class to protect Catalina against package access and insertion.
@@ -63,8 +63,8 @@ public final class SecurityConfig{
      */
     private SecurityConfig(){
         try{
-            packageDefinition = CatalinaProperties.getProperty("package.definition");
-            packageAccess = CatalinaProperties.getProperty("package.access");
+            packageDefinition = RadishProperties.getProperty("package.definition");
+            packageAccess = RadishProperties.getProperty("package.access");
         } catch (java.lang.Exception ex){
             if (log.isDebugEnabled()){
                 log.debug("Unable to load properties using CatalinaProperties", ex);

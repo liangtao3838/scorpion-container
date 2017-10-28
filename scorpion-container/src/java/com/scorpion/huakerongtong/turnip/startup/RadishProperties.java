@@ -35,13 +35,13 @@ import com.scorpion.huakerongtong.turnip.Globals;
  * @author Remy Maucherat
  */
 
-public class CatalinaProperties {
+public class RadishProperties {
 
 
     // ------------------------------------------------------- Static Variables
 
     private static final com.scorpion.huakerongtong.juli.logging.Log log=
-        com.scorpion.huakerongtong.juli.logging.LogFactory.getLog( CatalinaProperties.class );
+        com.scorpion.huakerongtong.juli.logging.LogFactory.getLog( RadishProperties.class );
 
     private static Properties properties = null;
 
@@ -112,7 +112,7 @@ public class CatalinaProperties {
 
         if (is == null) {
             try {
-                is = CatalinaProperties.class.getResourceAsStream
+                is = RadishProperties.class.getResourceAsStream
                     ("/com/scorpion/huakerongtong/turnip/startup/catalina.properties");
             } catch (Throwable t) {
                 handleThrowable(t);

@@ -41,7 +41,7 @@ import com.scorpion.huakerongtong.turnip.Service;
 import com.scorpion.huakerongtong.turnip.deploy.NamingResources;
 import com.scorpion.huakerongtong.turnip.mbeans.MBeanFactory;
 import com.scorpion.huakerongtong.turnip.mbeans.MBeanUtils;
-import com.scorpion.huakerongtong.turnip.startup.Catalina;
+import com.scorpion.huakerongtong.turnip.startup.Radish;
 import com.scorpion.huakerongtong.turnip.util.ExtensionValidator;
 import com.scorpion.huakerongtong.turnip.util.LifecycleMBeanBase;
 import com.scorpion.huakerongtong.turnip.util.ServerInfo;
@@ -157,7 +157,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
 
     private volatile boolean stopAwait = false;
     
-    private Catalina catalina = null;
+    private Radish catalina = null;
 
     private ClassLoader parentClassLoader = null;
 
@@ -343,7 +343,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      * Return the outer Catalina startup/shutdown component if present.
      */
     @Override
-    public Catalina getCatalina() {
+    public Radish getRadish() {
         return catalina;
     }
     
@@ -352,7 +352,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      * Set the outer Catalina startup/shutdown component if present.
      */
     @Override
-    public void setCatalina(Catalina catalina) {
+    public void setRadish(Radish catalina) {
         this.catalina = catalina;
     }
     
@@ -809,8 +809,8 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
         
         // Populate the extension validator with JARs from common and shared
         // class loaders
-        if (getCatalina() != null) {
-            ClassLoader cl = getCatalina().getParentClassLoader();
+        if (getRadish() != null) {
+            ClassLoader cl = getRadish().getParentClassLoader();
             // Walk the class loader hierarchy. Stop at the system class loader.
             // This will add the shared (if present) and common class loaders
             while (cl != null && cl != ClassLoader.getSystemClassLoader()) {

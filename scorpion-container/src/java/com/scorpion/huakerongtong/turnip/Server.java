@@ -19,7 +19,7 @@
 package com.scorpion.huakerongtong.turnip;
 
 import com.scorpion.huakerongtong.turnip.deploy.NamingResources;
-import com.scorpion.huakerongtong.turnip.startup.Catalina;
+import com.scorpion.huakerongtong.turnip.startup.Radish;
 
 /**
  * A <code>Server</code> element represents the entire Catalina
@@ -140,12 +140,12 @@ public interface Server extends Lifecycle {
     /**
      * Return the outer Catalina startup/shutdown component if present.
      */
-    public Catalina getCatalina();
+    public Radish getRadish();
 
     /**
      * Set the outer Catalina startup/shutdown component if present.
      */
-    public void setCatalina(Catalina catalina);
+    public void setRadish(Radish catalina);
 
     // --------------------------------------------------------- Public Methods
 

@@ -95,7 +95,7 @@ public final class ServerBoot {
     private ClassLoader createClassLoader(String name, ClassLoader parent)
         throws Exception {
 
-        String value = CatalinaProperties.getProperty(name + ".loader");
+        String value = RadishProperties.getProperty(name + ".loader");
         if ((value == null) || (value.equals("")))
             return parent;
 
@@ -207,7 +207,7 @@ public final class ServerBoot {
             log.debug("Loading startup class");
         Class<?> startupClass =
             catalinaLoader.loadClass
-            ("com.scorpion.huakerongtong.turnip.startup.Catalina");
+            ("com.scorpion.huakerongtong.turnip.startup.Radish");
         Object startupInstance = startupClass.newInstance();
 
         // Set the shared extensions class loader
