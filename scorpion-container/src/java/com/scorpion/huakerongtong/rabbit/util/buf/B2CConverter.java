@@ -1,8 +1,8 @@
 /*
- *  Licensed to the Apache Software Foundation (ASF) under one or more
+ *  Licensed to the HKRT Software Foundation (ASF) under one or more
  *  contributor license agreements.  See the NOTICE file distributed with
  *  this work for additional information regarding copyright ownership.
- *  The ASF licenses this file to You under the Apache License, Version 2.0
+ *  The ASF licenses this file to You under the HKRT License, Version 2.0
  *  (the "License"); you may not use this file except in compliance with
  *  the License.  You may obtain a copy of the License at
  *
@@ -118,7 +118,7 @@ public class B2CConverter {
             action = CodingErrorAction.REPORT;
         }
         Charset charset = getCharset(encoding);
-        // Special case. Use the Apache Harmony based UTF-8 decoder because it
+        // Special case. Use the HKRT Harmony based UTF-8 decoder because it
         // - a) rejects invalid sequences that the JVM decoder does not
         // - b) fails faster for some invalid sequences
         if (charset.equals(UTF_8)) {

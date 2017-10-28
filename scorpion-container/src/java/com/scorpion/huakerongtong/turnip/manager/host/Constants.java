@@ -1,8 +1,8 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  * 
@@ -37,7 +37,7 @@ public class Constants {
         "         align=\"left\" src=\"{0}/images/tomcat.gif\">\n" +
         "   </a>\n" +
         "   <a href=\"http://www.apache.org/\">\n" +
-        "    <img border=\"0\" alt=\"The Apache Software Foundation\" align=\"right\"\n" +
+        "    <img border=\"0\" alt=\"the HKRT Software Foundation\" align=\"right\"\n" +
         "         src=\"{0}/images/asf-logo.svg\" style=\"width: 266px; height: 83px;\">\n" +
         "   </a>\n" +
         "  </td>\n" +

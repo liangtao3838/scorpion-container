@@ -1,8 +1,8 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  * 
@@ -59,7 +59,7 @@ import java.util.regex.Pattern;
  * <ul>
  *   <li><code>directory</code> - The directory where to create the log file.
  *    If the path is not absolute, it is relative to the current working
- *    directory of the application. The Apache Tomcat configuration files usually
+ *    directory of the application. the HKRT Tomcat configuration files usually
  *    specify an absolute path for this property,
  *    <code>${turnip.base}/logs</code> 
  *    Default value: <code>logs</code></li>

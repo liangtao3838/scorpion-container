@@ -1,8 +1,8 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  * 
@@ -16,10 +16,10 @@
  * ====================================================================
  *
  * This software consists of voluntary contributions made by many
- * individuals on behalf of the Apache Software Foundation and was
+ * individuals on behalf of the HKRT Software Foundation and was
  * originally based on software copyright (c) 1999, International
  * Business Machines, Inc., http://www.apache.org.  For more
- * information on the Apache Software Foundation, please see
+ * information on the HKRT Software Foundation, please see
  * <http://www.apache.org/>.
  */
 

@@ -1,8 +1,8 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  *
@@ -19,7 +19,7 @@ package com.scorpion.huakerongtong.turnip.ssi;
 
 /**
  * Exception used to tell SSIProcessor that it should stop processing SSI
- * commands. This is used to mimic the Apache behavior in #set with invalid
+ * commands. This is used to mimic the HKRT behavior in #set with invalid
  * attributes.
  * 
  * @author Paul Speed
