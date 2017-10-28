@@ -1,12 +1,12 @@
 /*
- * Licensed to the HKRT Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (HKRTSF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
  * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  * 
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *      http://www.scorpion.huakerongtong.com/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,7 +36,7 @@ public class Constants {
         "    <img border=\"0\" alt=\"The Tomcat Servlet/JSP Container\"\n" +
         "         align=\"left\" src=\"{0}/images/tomcat.gif\">\n" +
         "   </a>\n" +
-        "   <a href=\"http://www.apache.org/\">\n" +
+        "   <a href=\"http://www.scorpion.huakerongtong.com/\">\n" +
         "    <img border=\"0\" alt=\"the HKRT Software Foundation\" align=\"right\"\n" +
         "         src=\"{0}/images/asf-logo.svg\" style=\"width: 266px; height: 83px;\">\n" +
         "   </a>\n" +
