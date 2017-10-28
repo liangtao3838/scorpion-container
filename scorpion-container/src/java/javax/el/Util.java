@@ -191,7 +191,7 @@ class Util {
 
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     static Method findMethod(Class<?> clazz, String methodName,
@@ -221,7 +221,7 @@ class Util {
     }
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     @SuppressWarnings("null")
@@ -378,7 +378,7 @@ class Util {
 
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     private static Wrapper resolveAmbiguousWrapper(Set<Wrapper> candidates,
@@ -446,7 +446,7 @@ class Util {
 
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     static boolean isAssignableFrom(Class<?> src, Class<?> target) {
@@ -484,7 +484,7 @@ class Util {
 
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     private static boolean isCoercibleFrom(Object src, Class<?> target) {
@@ -517,7 +517,7 @@ class Util {
 
 
     /*
-     * This method duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This method duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     static Method getMethod(Class<?> type, Method m) {
@@ -724,7 +724,7 @@ class Util {
     }
 
     /*
-     * This class duplicates code in org.apache.el.util.ReflectionUtil. When
+     * This class duplicates code in com.scorpion.huakerongtong.el.util.ReflectionUtil. When
      * making changes keep the code in sync.
      */
     private static class MatchResult implements Comparable<MatchResult> {

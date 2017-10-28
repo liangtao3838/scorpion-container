@@ -37,7 +37,7 @@ public class BeanELResolver extends ELResolver {
 
     private static final int CACHE_SIZE;
     private static final String CACHE_SIZE_PROP =
-        "org.apache.el.BeanELResolver.CACHE_SIZE";
+        "com.scorpion.huakerongtong.el.BeanELResolver.CACHE_SIZE";
 
     static {
         String cacheSizeStr;

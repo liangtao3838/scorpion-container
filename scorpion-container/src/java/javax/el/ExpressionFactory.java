@@ -141,7 +141,7 @@ public abstract class ExpressionFactory {
      * <li>$JRE_HOME/lib/el.properties - key javax.el.ExpressionFactory</li>
      * <li>javax.el.ExpressionFactory</li>
      * <li>Platform default implementation -
-     *     org.apache.el.ExpressionFactoryImpl</li>
+     *     com.scorpion.huakerongtong.el.ExpressionFactoryImpl</li>
      * </ol>
      * @return the new ExpressionFactory
      */
@@ -369,7 +369,7 @@ public abstract class ExpressionFactory {
         }
         if (className == null) {
             // Fourth - default
-            className = "org.apache.el.ExpressionFactoryImpl";
+            className = "com.scorpion.huakerongtong.el.ExpressionFactoryImpl";
         }
         return className;
     }

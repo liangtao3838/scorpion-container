@@ -26,7 +26,7 @@ import java.util.ServiceLoader;
 public abstract class ContainerProvider {
 
     private static final String DEFAULT_PROVIDER_CLASS_NAME =
-            "org.apache.tomcat.websocket.WsWebSocketContainer";
+            "com.scorpion.huakerongtong.rabbit.websocket.WsWebSocketContainer";
 
     /**
      * Create a new container used to create outgoing WebSocket connections.
