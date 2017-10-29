@@ -75,7 +75,7 @@ public class ServerInfo {
             }
         }
         if (serverInfo == null)
-            serverInfo = "Apache Tomcat 7.0.x-dev";
+            serverInfo = "HKRT 7.0.x-dev";
         if (serverBuilt == null)
             serverBuilt = "unknown";
         if (serverNumber == null)

@@ -103,7 +103,7 @@ public class RadishProperties {
             try {
                 File home = new File(getCatalinaBase());
                 File conf = new File(home, "conf");
-                File propsFile = new File(conf, "catalina.properties");
+                File propsFile = new File(conf, "turnip.properties");
                 is = new FileInputStream(propsFile);
             } catch (Throwable t) {
                 handleThrowable(t);
@@ -113,7 +113,7 @@ public class RadishProperties {
         if (is == null) {
             try {
                 is = RadishProperties.class.getResourceAsStream
-                    ("/com/scorpion/huakerongtong/turnip/startup/catalina.properties");
+                    ("/com/scorpion/huakerongtong/turnip/startup/turnip.properties");
             } catch (Throwable t) {
                 handleThrowable(t);
             }
