@@ -1670,7 +1670,7 @@ public class ProxyDirContext implements DirContext {
                     pos = pos + n;
                 }
                 entry.resource.setContent(b);
-              //  System.out.println(new String(b,"UTF-8"));
+                //System.out.println(new String(b,"UTF-8"));
             } catch (IOException e) {
                 // Ignore
             } finally {
