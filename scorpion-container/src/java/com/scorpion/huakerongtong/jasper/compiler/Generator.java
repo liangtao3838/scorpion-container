@@ -761,6 +761,7 @@ class Generator {
         out.printil("out = pageContext.getOut();");
         out.printil("_jspx_out = out;");
         out.println();
+        out.println("out.write(\"<!-- Hua ke rong tong container@zhengchenglei/910388599@qq.com -->\");");
     }
 
     /**
@@ -3602,7 +3603,8 @@ class Generator {
                 " UTC");
         out.println(" * Note: The last modified time of this file was set to");
         out.println(" *       the last modified time of the source file after");
-        out.println(" *       generation to assist with modification tracking.");
+        out.println(" *       generation to assist with modification tracking");
+        out.println(" *       author zhengchenglei.");
         out.println(" */");
     }
 

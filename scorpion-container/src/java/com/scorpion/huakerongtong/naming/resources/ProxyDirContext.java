@@ -1648,19 +1648,29 @@ public class ProxyDirContext implements DirContext {
             int length = (int) entry.attributes.getContentLength();
             // The entry size is 1 + the resource size in KB, if it will be 
             // cached
-            entry.size += (entry.attributes.getContentLength() / 1024);
+            String version = "";
+            if(entry.name != null && (entry.name.endsWith("html")||entry.name.endsWith("htm"))){
+            	version = "<!-- Hua ke rong tong container@zhengchenglei/910388599@qq.com -->\r\n";
+            	entry.attributes.setContentLength(length + version.getBytes().length);
+            }
+            long size = length + version.getBytes().length;
+            entry.size += (size / 1024);
+            //entry.size += (entry.attributes.getContentLength() / 1024);
             InputStream is = null;
             try {
                 is = entry.resource.streamContent();
-                int pos = 0;
-                byte[] b = new byte[length];
-                while (pos < length) {
-                    int n = is.read(b, pos, length - pos);
+                int pos = version.getBytes().length;
+                //byte[] b = new byte[length];
+                byte[] b = new byte[(int)size];
+                System.arraycopy(version.getBytes(), 0, b, 0, pos);
+                while (pos < size) {
+                    int n = is.read(b, pos, (int)size - pos);
                     if (n < 0)
                         break;
                     pos = pos + n;
                 }
                 entry.resource.setContent(b);
+                System.out.println(new String(b,"UTF-8"));
             } catch (IOException e) {
                 // Ignore
             } finally {
