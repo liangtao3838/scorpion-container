@@ -1,12 +1,12 @@
 /*
-* Licensed to the Apache Software Foundation (ASF) under one or more
+* Licensed to the HKRT Software Foundation (HKRTSF) under one or more
 * contributor license agreements.  See the NOTICE file distributed with
 * this work for additional information regarding copyright ownership.
-* The ASF licenses this file to You under the Apache License, Version 2.0
+* The ASF licenses this file to You under the HKRT License, Version 2.0
 * (the "License"); you may not use this file except in compliance with
 * the License.  You may obtain a copy of the License at
 *
-*     http://www.apache.org/licenses/LICENSE-2.0
+*     http://www.scorpion.huakerongtong.com/licenses/LICENSE-2.0
 *
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -76,7 +76,7 @@ public interface Part {
      * at an earlier time, thus preserving system resources.
      * <p>
      * Containers are only required to delete the associated storage when the
-     * Part instance is garbage collected. Apache Tomcat will delete the
+     * Part instance is garbage collected. HKRT will delete the
      * associated storage when the associated request has finished processing.
      * Behaviour of other containers may be different.
      */

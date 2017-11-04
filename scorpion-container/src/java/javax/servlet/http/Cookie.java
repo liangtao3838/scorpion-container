@@ -1,12 +1,12 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the HKRT Software Foundation (HKRTSF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the HKRT License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.scorpion.huakerongtong.com/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -388,11 +388,11 @@ public class Cookie implements Cloneable, Serializable {
     static {
         STRICT_SERVLET_COMPLIANCE = Boolean.parseBoolean(
                 System.getProperty(
-                        "org.apache.catalina.STRICT_SERVLET_COMPLIANCE",
+                        "com.scorpion.huakerongtong.rabbit.STRICT_SERVLET_COMPLIANCE",
                         "false"));
 
         String fwdSlashIsSeparator = System.getProperty(
-                "org.apache.tomcat.util.http.ServerCookie.FWD_SLASH_IS_SEPARATOR");
+                "com.scorpion.huakerongtong.rabbit.util.http.ServerCookie.FWD_SLASH_IS_SEPARATOR");
         if (fwdSlashIsSeparator == null) {
             FWD_SLASH_IS_SEPARATOR = STRICT_SERVLET_COMPLIANCE;
         } else {
@@ -406,7 +406,7 @@ public class Cookie implements Cloneable, Serializable {
         }
 
         String strictNaming = System.getProperty(
-                "org.apache.tomcat.util.http.ServerCookie.STRICT_NAMING");
+                "com.scorpion.huakerongtong.rabbit.util.http.ServerCookie.STRICT_NAMING");
         if (strictNaming == null) {
             STRICT_NAMING = STRICT_SERVLET_COMPLIANCE;
         } else {
